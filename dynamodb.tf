@@ -17,7 +17,7 @@ resource "aws_dynamodb_table_item" "vouch_machine_details" {
 {
   "MachineID": {"S": "${aws_instance.machine.id}"},
   "AvailabilityZone": {"S": "${aws_instance.machine.availability_zone}"},
-  "Instancetype": {"S": "${aws_instance.machine.instance_type"}"},
+  "Instancetype": {"S": "${aws_instance.machine.instance_type}"}
 }
 ITEM
 }
