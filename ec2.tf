@@ -19,7 +19,7 @@ data "aws_ami" "amazon_linux" {
   owners = ["amazon"]
 }
 
-resource "aws_key_pair" "developer" {
+resource "aws_key_pair" "gurumadala" {
   public_key = var.public_key
 }
 
