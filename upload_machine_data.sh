@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo su -
 set -ex
 
 yum install -y wget
