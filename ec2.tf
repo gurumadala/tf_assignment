@@ -25,9 +25,9 @@ resource "aws_key_pair" "gurumadala" {
 
 resource "aws_instance" "machine" {
   ami = data.aws_ami.amazon_linux.id
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
   iam_instance_profile = aws_iam_instance_profile.machine.id
-  key_name = aws_key_pair.developer.key_name
+  key_name = aws_key_pair.gurumadala.key_name
   associate_public_ip_address = true
 
   root_block_device {
